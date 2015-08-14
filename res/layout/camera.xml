@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/common_backgound">
+
+    <!-- 底部快门和完成取消相关和小图显示UI结束 -->
+
+    <!-- 顶部闪关灯和摄像头切换UI -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:id="@+id/trun_camera_layout">
+        <LinearLayout android:id="@+id/flash_type_layout"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/flash_type_view_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_gravity="center_horizontal"
+                android:scaleType="center"
+                android:src="@drawable/shutter_auto" />
+
+            <TextView
+                android:id="@+id/flash_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="自动"
+                android:textColor="#dcb428"
+                android:textSize="15sp" 
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/flash_type_sel_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_toRightOf="@id/flash_type_layout"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/flash_mode_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_gravity="left|center"
+                
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="自动"
+                android:textColor="#dcb428"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/flash_mode_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="关闭"
+                android:textColor="#dcb428"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/flash_mode_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="开启"
+                android:textColor="#dcb428"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/switch_camera"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+        
+    </RelativeLayout>
+    
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/preview_frame_id"
+                 android:layout_below="@+id/trun_camera_layout"
+                 android:visibility="invisible">
+        <SurfaceView
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+    
+    
+    <!-- 分割取景框的layout -->
+    <LinearLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_below="@+id/trun_camera_layout"
+                 android:orientation="vertical">
+        <View android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/transparent"
+              android:layout_gravity="top"
+              android:id="@+id/square_view"/>
+        <View android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_backgound"/>
+    </LinearLayout>
+    
+    <!-- 底部快门和完成取消相关和小图显示UI -->
+    
+    <!-- <View android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/trun_camera_layout"
+                  android:background="@color/transparent"
+                  android:id="@+id/square_view"/> -->
+    
+    <LinearLayout
+        android:id="@+id/pics_shutter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent">
+
+        <!-- 图片显示区域 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" 
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@color/transparent">
+
+            <HorizontalScrollView
+                android:id="@+id/thumb_images_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" 
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/thumb_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:gravity="center"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/shutterbtn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_backgound">
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:clickable="true"
+                android:padding="8dp"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/complete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:padding="8dp"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/takepicture_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shutter_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_backgound">#191919</color>
+    <color name="private_bg">#f0f0f6</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#66000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_85">#D9FFFFFF</color>
+    <color name="white_13">#21000000</color>
+    <color name="red">#FF0000</color>
+    <color name="red_custom">#E93B21</color>
+    <color name="red_ff5500">#FF5500</color>
+    <color name="red_ff3939">#FF3939</color>
+    <color name="red_ff3939_50">#80FF3939</color>
+    <color name="red_custom_85">#D9E93B21</color>
+    <color name="red_ff1122">#ff1122</color>
+    <color name="blue_0c85fe">#0c85fe</color>
+    <color name="disable_hit">#f49d90</color>
+    <color name="able_hit_red">#e6c02711</color>
+    <color name="gray_999999">#999999</color>
+    <color name="bg_efeff4">#efeff4</color>
+
+    <color name="black">#000000</color>
+    <color name="translucent_black">#E6000000</color>
+    <color name="translucent_white">#B3FFFFFF</color>
+    <color name="translucent_red">#B3FF0000</color>
+
+    <color name="common_bar_background">#E6FFFFFF</color>
+    <color name="common_bar_devideline">#66626262</color>
+    <color name="common_devideline">#B2B2B2</color>
+
+    <color name="bottom_bar_background">#cc000000</color>
+    <color name="deep_gray">#5c5c5c</color>
+
+    <!-- 两列图的边框颜色 -->
+    <color name="product_frame">#dadada</color>
+    <color name="filter_text_bg_pressed">#E93B21</color>
+
+    <color name="text_gray">#929292</color>
+    <color name="text_lite_gray">#B2B2B2</color>
+    <color name="text_black">#191919</color>
+    <color name="text_blue_withdraw">#0654ba</color>
+    
+    <!-- 登陆页面字体颜色 -->
+    <color name="text_logon_common">#B2B2B2</color>
+    
+    <!-- 发布商品页面 -->
+    <color name="public_title_color">#ff0000</color>
+    
+    <color name="c_83">#838383</color>
+    <color name="c_92">#929292</color>
+    <color name="c_5c">#5c5c5c</color>
+    <color name="c_5c_85">#D95C5C5C</color>
+    <color name="c_70">#707070</color>
+    <color name="c_e2">#e2e2e2</color>
+    <color name="c_e5">#ea3836</color>
+    <color name="c_ea">#ea1616</color>
+    <color name="c_eaea">#eaeaea</color>
+    <color name="c_aa">#aaaaaa</color>
+    <color name="c_5d">#5d5d61</color>
+    <color name="c_b8">#b8b8b8</color>
+    <color name="c_b5">#b5b5b5</color>
+    <color name="c_5f">#5f5f63</color>
+    <color name="c_36">#36cdd9</color>
+    <color name="c_43">#434345</color>
+    <color name="c_4d">#4d4d4f</color>
+    <color name="c_45">#454547</color>
+    <color name="c_39">#39393b</color>
+    <color name="c_bd">#bdbdbd</color>
+    <color name="c_b2">#b2b2b2</color>
+    <color name="c_3a">#3acdd9</color>
+    <color name="c_d5">#d5d5d5</color>
+    <color name="c_da">#dadada</color>
+    <color name="c_19">#191919</color>
+    <color name="c_2a">#2a7f91</color>
+    <color name="c_ba">#0654ba</color>
+    <color name="c_8f">#05418f</color>
+    <color name="c_ff3b36">#ff3b36</color>
+    <color name="c_e8">#e8e8e8</color>
+    <color name="c_32">#329100</color>
+    <color name="c_f0">#ff0000</color>
+    <color name="c_f0f0f0">#f0f0f0</color>
+    <color name="c_f0f0f6">#f0f0f6</color>
+    <color name="c_f0f0f0E5">#E5f0f0f0</color>
+    <color name="c_30">#303030</color>
+    <color name="c_9f">#9f9f9f</color>
+    <color name="c_9e">#2a9efd</color>
+    <color name="c_b0">#b0b0b0</color>
+    <color name="c_f5">#f5f5f5</color>
+
+    <color name="c_ca">#CACACA</color>
+
+    <color name="c_7">#777777</color>
+    <color name="c_f12">#ff1122</color>
+    <color name="c_ee">#eeeeee</color>
+    <color name="c_99">#999999</color>
+    <color name="c_cc">#cccccc</color>
+    <color name="c_d7">#d7d7d7</color>
+
+
+    <drawable name="d_69">#69696E</drawable>
+    <drawable name="d_5f">#5f5f63</drawable>
+
+    <color name="c_f2">#f2f2f0</color>
+    <color name="c_f2f2">#f2f2f2</color>
+<!--     <color name="c_d5">#d5d5d5</color> -->
+    <color name="c_f7">#f7f7f7</color>
+    
+      <color name="detail_time_color">#838383</color>
+
+    <color name="translucent_c_5c">#995C5C5C</color>
+
+    <color name="letter_bar_bg">#33000000</color> 
+    <drawable name="transparent">#00000000</drawable>
+
+    <!--启动页北京色值-->
+    <color name="launch_bg">#e93b21</color>
+    
+     <!--附近弹出层透明背景-->
+    <color name="float_bg">#00000000</color>  
+    <!-- 筛选条件 -->
+    <color name="search_type">#ff0000</color> 
+    <color name="mytopicBackground">#f0f0f6</color>
+    <color name="topic_tag">#ff1122</color>
+    <color name="topic_line">#E5E5E5</color>
+    <color name="topic_time">#999999</color>
+    <color name="topic_username">#000000</color>
+    <color name="topic_product_bg">#edeeee</color>
+    <color name="color_a">#aaaaaa</color>
+</resources>
